@@ -16,13 +16,18 @@ python3 -m pip install Django
 ## Usage
 
 ```sh
+python3 manage.py migrate
 python3 manage.py runserver
+```
 
-add http://127.0.0.1:8000/polls/ on URL
+L'application est accessible sur http://127.0.0.1:8000/polls/
 
-to access to the admin: replace /polls by http://127.0.0.1:8000/admin/
-- Username: MialyTDD
-- Password: rowenna567??
+### Accès à l'administration
+
+Créez un compte admin en local, puis connectez-vous sur http://127.0.0.1:8000/admin/ :
+
+```sh
+python3 manage.py createsuperuser
 ```
 
 ## Run tests
